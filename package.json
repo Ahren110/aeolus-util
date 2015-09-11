@@ -1,0 +1,19 @@
+{
+  "name": "aeolus-util",
+  "version": "0.0.1",
+  "description": "常用web 工具封装lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "biz",
+    "aeolus"
+  ],
+  "author": "sherlock221b",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sherlock221/Aeolus.git"
+  }
+}
