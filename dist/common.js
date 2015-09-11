@@ -54,13 +54,16 @@
 	var os  = __webpack_require__(3);
 	var sg  = __webpack_require__(4);
 	var ck  = __webpack_require__(5);
+	
 	var temp  = __webpack_require__(6);
+	
 	var jstring  = __webpack_require__(7);
 	var jvalidate  = __webpack_require__(8);
+	
 	var page = __webpack_require__(9);
 	var location = __webpack_require__(10);
 	
-
+	
 	module.exports = {
 	    ajax : ajax,
 	    animation : animation,
@@ -231,7 +234,6 @@
 	 * @param key
 	 */
 	
-	    var lg = __webpack_require__(4);
 	
 	    var OS = {
 	
@@ -394,40 +396,6 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/**
-	 * Cookie 相关操作
-	 * @param key
-	 */
-	!(__WEBPACK_AMD_DEFINE_RESULT__ = function(require,exports,module){
-	    var Cookie = {
-	        getCookie: function (key) {
-	            var reg = new RegExp('(^|\\s+)' + key + '=([^;]*)(;|$)');
-	            var regResult = document.cookie.match(reg);
-	            if (regResult) {
-	                return unescape(regResult[2]);
-	            } else {
-	                return '';
-	            }
-	        },
-	        setCookie: function (key, value, expires) {
-	            var cookieItem = key + '=' + escape(value);
-	            if (expires) {
-	                if (typeof(expires) == 'number') {
-	                    expires = new Date(expires);
-	                }
-	                cookieItem += ';expires=' + expires.toGMTString();
-	            }
-	            document.cookie = cookieItem;
-	        }
-	    };
-	
-	    module.exports  = Cookie;
-	}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-
-/***/ },
-/* 5 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_RESULT__;/**
 	 * HTML5 storage 相关操作
 	 * @param key
 	 */
@@ -490,6 +458,40 @@
 	
 	
 	    module.exports  = SG;
+	}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_RESULT__;/**
+	 * Cookie 相关操作
+	 * @param key
+	 */
+	!(__WEBPACK_AMD_DEFINE_RESULT__ = function(require,exports,module){
+	    var Cookie = {
+	        getCookie: function (key) {
+	            var reg = new RegExp('(^|\\s+)' + key + '=([^;]*)(;|$)');
+	            var regResult = document.cookie.match(reg);
+	            if (regResult) {
+	                return unescape(regResult[2]);
+	            } else {
+	                return '';
+	            }
+	        },
+	        setCookie: function (key, value, expires) {
+	            var cookieItem = key + '=' + escape(value);
+	            if (expires) {
+	                if (typeof(expires) == 'number') {
+	                    expires = new Date(expires);
+	                }
+	                cookieItem += ';expires=' + expires.toGMTString();
+	            }
+	            document.cookie = cookieItem;
+	        }
+	    };
+	
+	    module.exports  = Cookie;
 	}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ },

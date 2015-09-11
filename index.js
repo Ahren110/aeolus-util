@@ -1,5 +1,5 @@
 
-module.exports =  require("./dist/common.js");
+module.exports =  require("./src/main.js");
 
 
 

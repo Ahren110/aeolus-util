@@ -1,6 +1,6 @@
 {
   "name": "aeolus-util",
-  "version": "0.0.3",
+  "version": "0.0.9",
   "description": "常用web 工具封装lib",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,9 @@
   ],
   "author": "sherlock221b",
   "license": "MIT",
+  "devDependencies": {
+
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sherlock221/aeolus-util.git"

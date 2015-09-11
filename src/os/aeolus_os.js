@@ -3,7 +3,6 @@
  * @param key
  */
 
-    var lg = require("ae_sg");
 
     var OS = {
 

@@ -4,7 +4,7 @@
  */
 
 var path = require('path');
-var webpack = require('webpack');
+//var webpack = require('webpack');
 
 //别名
 var alias = {

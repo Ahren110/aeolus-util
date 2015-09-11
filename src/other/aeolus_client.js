@@ -2,7 +2,7 @@
  * cicada client
  * @param key
  */
-    var Location = require("ae_location");
+    var Location = require("../web/aeolus_location");
 
     var  Client = {
         openCiacada : function(){
