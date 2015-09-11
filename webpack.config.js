@@ -27,7 +27,6 @@ var alias = {
 module.exports = {
 
 
-
     //页面入口文件
     //根据filename的[name]值 会打包多个文件
     entry: {
